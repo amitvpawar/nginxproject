@@ -1,0 +1,12 @@
+---
+- name: coping files to jenkins server
+  hosts: all
+  tasks:
+    - name: coping index.html file
+      copy:
+        src: index.html
+        dest: "/home/amit/All/Jenkins"
+    - name: coping Dockerfile 
+      copy:
+        src: Dockerfile
+        dest: "/home/amit/All/Jenkins"
